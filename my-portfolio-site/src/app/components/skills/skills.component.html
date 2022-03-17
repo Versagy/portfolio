@@ -1,4 +1,12 @@
 <div class="skills">
-    <p>skills works!</p>
+    <h2 class="skills__title">Core Technologies</h2>
+    <div class="skills__content">
+        <div class="skills__content__doughnut" *ngFor="let doughnut of doughnuts">
+            <app-doughnut [image]="doughnut.image" [doughnutData]="doughnut.doughnutData" [doughnutDataColors]="doughnut.doughnutDataColors" [doughnutChartLabels]="doughnut.doughnutChartLabels"></app-doughnut>
+        </div>      
+    </div>
+    <div class="terminal" >
+        <pre>ng generate component xyz</pre>
+    </div>
 </div>
 

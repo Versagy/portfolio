@@ -9,6 +9,9 @@ import { BenefitsComponent } from './components/benefits/benefits.component';
 import { HobbyesComponent } from './components/hobbyes/hobbyes.component';
 import { SomeInfoComponent } from './components/some-info/some-info.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import { NgChartsModule } from 'ng2-charts';
+import { DoughnutComponent } from './ui/doughnut/doughnut.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { FooterComponent } from './components/footer/footer.component';
     BenefitsComponent,
     HobbyesComponent,
     SomeInfoComponent,
-    FooterComponent
+    FooterComponent,
+    WorkExperienceComponent,
+    DoughnutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,79 @@
+.skills
+    display: grid
+    width: 100%
+    place-items: center
+
+.skills__title 
+    font-size: 50px
+
+.skills__content 
+    display: grid
+    grid-template-columns: 1fr  1fr 1fr
+    column-gap: 300px
+    row-gap: 150px
+    // grid-template-rows: 1fr  1fr 
+    
+@media (max-width: 1053px) 
+    .skills__content 
+        display: grid
+        grid-template-columns: 1fr  1fr 1fr
+        column-gap: 100px
+        row-gap: 100px
+    
+@media (max-width: 670px) 
+    .skills__content 
+        display: grid
+        grid-template-columns: 1fr  1fr 
+        row-gap: 40px
+
+@media (max-width: 396px) 
+    .skills__content 
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr))
+
+
+@media screen and (max-width: 767px) 
+    .card-container > *:not(.circle-link) ,
+    .terminal 
+        width: 100%
+
+
+.github-star-badge .material-icons 
+    height: 16px
+    width: 16px
+    margin-right: 4px
+  
+.terminal 
+    position: relative
+    width: 80%
+    max-width: 600px
+    border-radius: 6px
+    padding-top: 45px
+    margin-top: 8px
+    overflow: hidden
+    background-color: rgb(15, 15, 16)
+  
+
+.terminal::before 
+    content: "\2022 \2022 \2022"
+    position: absolute
+    top: 0
+    left: 0
+    height: 4px
+    background: rgb(58, 58, 58)
+    color: #c2c3c4
+    width: 100%
+    font-size: 2rem
+    line-height: 0
+    padding: 14px 0
+    text-indent: 4px
+  
+
+.terminal pre 
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace
+    color: white
+    padding: 0 1rem 1rem
+    margin: 0
+  
+    
+
